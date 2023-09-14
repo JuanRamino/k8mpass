@@ -1,0 +1,23 @@
+{
+	"dockerFile": "Dockerfile",
+    "appPort": [
+        "8000:8000"
+    ],
+	"runArgs": [
+		"--network=host"
+	],
+	"mounts": [
+		"source=kube-cli-k8mpass-vscode-extensions,target=/root/.vscode-server/extensions,type=volume",
+		"source=/mnt/c/Users/andrea.rizzini/.kube,target=/root/.kube,type=bind"
+	],
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"extensions": [
+				"ms-vscode.go",
+				"golang.go"
+			]
+		}
+	}
+}

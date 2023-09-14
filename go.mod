@@ -1,6 +1,6 @@
 module github.com/studiofarma/k8mpass
 
-go 1.21
+go 1.19
 
 require github.com/charmbracelet/bubbletea v0.24.2
 
